@@ -23,6 +23,6 @@ public class NoteService {
     }
 
     public List<Note> getNotesByStudentId(Long studentId){
-        return repository.findStudentById(studentId);
+        return repository.findByStudentId(studentId);
     }
 }

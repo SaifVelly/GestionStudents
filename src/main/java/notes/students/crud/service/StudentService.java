@@ -4,6 +4,8 @@ package notes.students.crud.service;
 import notes.students.crud.model.Student;
 import org.springframework.stereotype.Service;
 import notes.students.crud.repository.StudentRepository;
+import java.time.LocalDate;
+
 
 import java.util.List;
 
@@ -18,6 +20,7 @@ public class StudentService {
     public Student addStudent(String name) {
         Student student = new Student();
         student.setName(name);
+        student.setCreationDate(LocalDate.now());
         return repository.save(student);
     }
 

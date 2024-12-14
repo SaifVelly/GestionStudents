@@ -1,0 +1,39 @@
+# Ignore Maven and Gradle build directories
+target/
+build/
+
+# Ignore dependency caches
+.mvn/
+.gradle/
+**/dependency-cache/
+
+# Ignore IntelliJ and Eclipse project files
+.idea/
+*.iml
+*.ipr
+*.iws
+.classpath
+.project
+.settings/
+
+# Ignore logs
+*.log
+logs/
+!src/main/resources/static/logs/ # (If logs are required for your application)
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore environment files
+.env
+*.env
+
+# Ignore git files
+.git/
+.gitignore
+
+# Ignore node_modules if there are frontend assets
+node_modules/
+npm-debug.log
+yarn.lock
